@@ -9,6 +9,7 @@ META.yml
 README
 t/00.load.t
 t/lib/MyPrinter.pm
+t/manifest.t
 t/myprog.pl
 t/output.t
 t/pod.t
