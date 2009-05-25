@@ -6,3 +6,5 @@ Revision history for Devel-Ditto
 0.02    2009-05-29
         - Fix stack depth snafu.
 
+0.03    2009-05-29
+        - Add colour support
