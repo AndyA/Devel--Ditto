@@ -11,3 +11,6 @@ Revision history for Devel-Ditto
 
 0.04    2009-05-29
         - Handle close on STDOUT, STDERR
+
+0.05    2009-05-29
+        - Oops - remove spurious warning

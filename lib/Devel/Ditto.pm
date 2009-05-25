@@ -112,7 +112,6 @@ sub WRITE {
 
 sub CLOSE {
   my $self = shift;
-  warn "Closing\n";
   if ( $self->{is_err} ) {
     close REALSTDERR;
   }
