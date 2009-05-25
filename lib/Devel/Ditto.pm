@@ -71,18 +71,15 @@ sub TIEHANDLE {
   bless \%params, $class;
 }
 
-{
+sub _caller {
+  my $self  = shift;
   my $depth = 0;
-
-  sub _caller {
-    my $self = shift;
-    while () {
-      my ( $pkg, $file, $line ) = caller $depth;
-      return unless defined $pkg;
-      return ( $pkg, $file, $line )
-       unless $pkg->isa( __PACKAGE__ );
-      $depth++;
-    }
+  while () {
+    my ( $pkg, $file, $line ) = caller $depth;
+    return unless defined $pkg;
+    return ( $pkg, $file, $line )
+     unless $pkg->isa( __PACKAGE__ );
+    $depth++;
   }
 }
 
