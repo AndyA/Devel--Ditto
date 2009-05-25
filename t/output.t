@@ -4,23 +4,17 @@ use strict;
 use warnings;
 
 use File::Spec;
-use Test::More tests => 1;
+use Test::More tests => 2;
 use IPC::Run qw( run );
 
 run [ $^X, '-MDevel::Ditto', File::Spec->catfile( 't', 'myprog.pl' ) ],
  \my $in, \my $out, \my $err
  or die "Failed: $?";
-diag $out;
-diag $err;
 
-#open my $ph, '-|', $^X, '-MDevel::Ditto',
-# File::Spec->catfile( 't', 'myprog.pl' );
-#my @got = <$ph>;
-#close $ph or die "myprog.pl failed: $?";
-
-#diag Dumper(\@got);
-
-ok 1, "that's ok";
+is $out, "[main, t/myprog.pl, 9] This is regular text\n"
+ . "[MyPrinter, t/lib/MyPrinter.pm, 7] Hello, World\n", 'STDOUT';
+is $err, "[main, t/myprog.pl, 10] This is a warning\n"
+ . "[MyPrinter, t/lib/MyPrinter.pm, 8] Whappen?\n", 'STDERR';
 
 # vim:ts=2:sw=2:et:ft=perl
 

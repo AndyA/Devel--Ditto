@@ -16,12 +16,27 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-  perl -MDevel::Ditto myprog.pl
-  
+  $ perl -MDevel::Ditto myprog.pl
+  [main, t/myprog.pl, 9] This is regular text
+  [main, t/myprog.pl, 10] This is a warning
+  [MyPrinter, t/lib/MyPrinter.pm, 7] Hello, World
+  [MyPrinter, t/lib/MyPrinter.pm, 8] Whappen?
+
 =head1 DESCRIPTION
 
-=head1 INTERFACE 
+Sometimes it's hard to work out where some printed output is coming
+from. This module ties STDOUT and STDERR such that each call to C<print>
+or C<warn> will have its output prefixed with the package, file and line
+of the C<print> or C<warn> statement.
 
+Load it in your program:
+
+  use Devel::Ditto;
+
+or from the command line:
+
+  perl -MDevel::Ditto myprog.pl
+  
 =cut
 
 no warnings;

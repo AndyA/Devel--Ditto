@@ -1,0 +1,11 @@
+Build.PL
+Changes
+inc/MyBuilder.pm
+lib/Devel/Ditto.pm
+MANIFEST
+README
+t/00.load.t
+t/lib/MyPrinter.pm
+t/myprog.pl
+t/output.t
+t/pod.t
