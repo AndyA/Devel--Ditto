@@ -13,7 +13,7 @@ Devel::Ditto::Colour - Colour version of Devel::Ditto
 
 =head1 VERSION
 
-This document describes Devel::Ditto version 0.04
+This document describes Devel::Ditto version 0.05
 
 =head1 SYNOPSIS
 
@@ -25,7 +25,7 @@ This document describes Devel::Ditto version 0.04
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub import {
   my $class = shift;
