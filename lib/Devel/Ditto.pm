@@ -8,11 +8,11 @@ Devel::Ditto - Identify where print output comes from
 
 =head1 VERSION
 
-This document describes Devel::Ditto version 0.01
+This document describes Devel::Ditto version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
