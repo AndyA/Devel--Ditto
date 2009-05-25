@@ -15,10 +15,6 @@ my $builder = MyBuilder->new(
     'Test::More' => 0,
     'IPC::Run'   => 0
   },
-  test_requires          => {
-    'Test::More' => 0,
-    'IPC::Run'   => 0
-  },
   add_to_cleanup => ['Devel-Ditto-*'],
 );
 

@@ -9,3 +9,4 @@ t/lib/MyPrinter.pm
 t/myprog.pl
 t/output.t
 t/pod.t
+META.yml
