@@ -13,7 +13,7 @@ Devel::Ditto::Color - Color version of Devel::Ditto
 
 =head1 VERSION
 
-This document describes Devel::Ditto version 0.06
+This document describes Devel::Ditto version 0.07
 
 =head1 SYNOPSIS
 
@@ -25,7 +25,7 @@ This document describes Devel::Ditto version 0.06
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 1;
 __END__
