@@ -47,6 +47,8 @@ open( REALSTDERR, ">&STDERR" );
 use warnings;
 use strict;
 
+use File::Spec;
+
 sub import {
   my $class  = shift;
   my %params = @_;
@@ -86,6 +88,7 @@ sub _caller {
 sub _logbit {
   my $self = shift;
   my ( $pkg, $file, $line ) = $self->_caller();
+  $file = File::Spec->canonpath($file);
   return "[$pkg, $file, $line] ";
 }
 
