@@ -1,5 +1,6 @@
 package Devel::Ditto::Color;
 
+use 5.008;
 use strict;
 use warnings;
 

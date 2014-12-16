@@ -5,9 +5,9 @@ use warnings;
 
 use File::Spec;
 use Test::More tests => 2;
-use IPC::Run qw( run );
+use Test::Requires 'IPC::Run';
 
-run [ $^X, '-MDevel::Ditto', File::Spec->catfile( 't', 'myprog.pl' ) ],
+IPC::Run::run [ $^X, '-MDevel::Ditto', File::Spec->catfile( 't', 'myprog.pl' ) ],
  \my $in, \my $out, \my $err
  or die "Failed: $?";
 

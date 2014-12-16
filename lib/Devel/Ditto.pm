@@ -12,7 +12,7 @@ This document describes Devel::Ditto version 0.07
 
 =cut
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 =head1 SYNOPSIS
 
@@ -133,6 +133,10 @@ No bugs have been reported.
 Please report any bugs or feature requests to
 C<bug-devel-Ditto@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
+
+=head1 REPOSITORY
+
+L<https://github.com/AndyA/Devel--Ditto>
 
 =head1 AUTHOR
 
