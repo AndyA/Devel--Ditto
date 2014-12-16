@@ -13,7 +13,6 @@ my $builder = MyBuilder->new(
   dist_version_from => 'lib/Devel/Ditto.pm',
   requires          => {
     'Test::More' => 0,
-    'IPC::Run'   => 0
   },
   add_to_cleanup => ['Devel-Ditto-*'],
 );

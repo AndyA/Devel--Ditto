@@ -1,6 +1,9 @@
 Revision history for Perl module Devel::Ditto
 
 0.06    2012-12-??
+        - Dropped IPC::Run as required, and made t/output.t use IPC::Run
+          via Test::Requires, so the test will be skipped if you don't
+          have IPC::Run installed. Addresses RT#48810.
         - Added required perl version to Devel::Ditto::Colou?r
         - Reversed order of entries in this file, to most recent first.
         - Added github repo to pod
